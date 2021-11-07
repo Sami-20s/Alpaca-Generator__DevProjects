@@ -57,6 +57,21 @@ const Home = () => {
         }
     };
 
+    const randomArray = list => {
+        return Math.floor(Math.random() * list.length);
+    };
+
+    const handleRandom = () => {
+        setHair(Hair[randomArray(Hair)].url);
+        setEars(Ears[randomArray(Ears)].url);
+        setEyes(Eyes[randomArray(Eyes)].url);
+        setMouth(Mouth[randomArray(Mouth)].url);
+        setNeck(Neck[randomArray(Neck)].url);
+        setLeg(Leg[randomArray(Leg)].url);
+        setAccessories(Accessories[randomArray(Accessories)].url);
+        setBackgrounds(Backgrounds[randomArray(Backgrounds)].url);
+    };
+    console.log(randomArray(Hair));
     return (
         <Container>
             <h1>ALPACA GENERATOR</h1>
@@ -85,7 +100,7 @@ const Home = () => {
                     </div>
                     <Row>
                         <Col>
-                            <Button>Random</Button>
+                            <Button onClick={handleRandom}>Random</Button>
                         </Col>
                         <Col>
                             <Button>Download</Button>
