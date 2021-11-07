@@ -72,9 +72,9 @@ const Home = () => {
         setBackgrounds(Backgrounds[randomArray(Backgrounds)].url);
     };
     return (
-        <Container className="mt-2">
+        <Container className="mt-2 media__qurey__text">
             <h1>ALPACA GENERATOR</h1>
-            <Row xs="1" md="2" className="d-flex justify-content-center mt-2">
+            <Row xs="1" xl="2" className="d-flex justify-content-center mt-2 ">
                 <Col>
                     <div
                         className="img-container"
@@ -99,20 +99,19 @@ const Home = () => {
                     </div>
                     <div className="d-flex justify-content-evenly mt-4">
                         <Button
+                            variant="success"
                             onClick={handleRandom}
-                            size="lg"
-                            className="col-3"
+                            className="col-4"
                         >
                             Random
-                        </Button>
-                        <Button variant="success" size="lg" className="col-3">
-                            Download
                         </Button>
                     </div>
                 </Col>
                 <Col>
                     <div>
-                        <h4>Accessories The ALPACA</h4>
+                        <h4 className="mb__media__query">
+                            Accessories The ALPACA
+                        </h4>
                         <Row xs="2" md="2" lg="3" className="g-4 mt-3">
                             {accList.map(item => {
                                 return (
