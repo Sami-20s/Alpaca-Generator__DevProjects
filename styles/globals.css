@@ -18,6 +18,7 @@ a {
     max-width: 100%;
     position: relative;
     min-height: 600px;
+    max-height: 601px;
 }
 .hair__img,
 .ears__img,
@@ -51,12 +52,12 @@ a {
 }
 .ears__img {
     z-index: 102;
-    top: -70px;
+    bottom: 15px;
     left: 15px;
 }
 .hair__img {
     z-index: 500;
-    top: -50px;
+    bottom: 0;
     left: -15px;
 }
 .nose__img {
@@ -67,4 +68,52 @@ a {
     z-index: 2000;
     bottom: 20px;
     left: 24px;
+}
+/* Media Query For Tablet */
+@media (max-width: 767px) {
+    .hair__img,
+    .ears__img,
+    .eyes__img,
+    .leg__img,
+    .mouth__img,
+    .neck__img,
+    .nose__img,
+    .accessories__img {
+        position: absolute;
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+        position: relative;
+        min-height: unset;
+        max-height: 500px;
+        height: 100vw;
+    }
+}
+/* Media Query For Small Laptop */
+@media (max-width: 767px) {
+    .hair__img,
+    .ears__img,
+    .eyes__img,
+    .leg__img,
+    .mouth__img,
+    .neck__img,
+    .nose__img,
+    .accessories__img {
+        position: absolute;
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+        position: relative;
+        min-height: unset;
+        max-height: 500px;
+        height: 100vw;
+    }
+    .media__qurey__text {
+        text-align: center !important;
+    }
+    .mb__media__query {
+        margin-top: 20px;
+    }
 }
