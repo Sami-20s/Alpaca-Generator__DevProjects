@@ -122,7 +122,7 @@ export const Neck = [
     {
         id: 3,
         text: "Bend-forward",
-        url: "/alpaca/neck/Bend-forward.png",
+        url: "/alpaca/neck/bend-forward.png",
     },
     {
         id: 4,
