@@ -185,11 +185,6 @@ export const Accessories = [
         text: "Glasses",
         url: "/alpaca/accessories/glasses.png",
     },
-    {
-        id: 4,
-        text: "Headphone",
-        url: "/alpaca/accessories/headphone.png",
-    },
 ];
 // Backgrounds
 export const Backgrounds = [
