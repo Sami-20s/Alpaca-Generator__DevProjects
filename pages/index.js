@@ -73,9 +73,9 @@ const Home = () => {
     };
     console.log(randomArray(Hair));
     return (
-        <Container>
+        <Container className="mt-2">
             <h1>ALPACA GENERATOR</h1>
-            <Row xs="1" md="2" className="d-flex justify-content-center">
+            <Row xs="1" md="2" className="d-flex justify-content-center mt-2">
                 <Col>
                     <div
                         className="img-container"
@@ -98,14 +98,18 @@ const Home = () => {
                             className="nose__img"
                         />
                     </div>
-                    <Row>
-                        <Col>
-                            <Button onClick={handleRandom}>Random</Button>
-                        </Col>
-                        <Col>
-                            <Button>Download</Button>
-                        </Col>
-                    </Row>
+                    <div className="d-flex justify-content-evenly mt-4">
+                        <Button
+                            onClick={handleRandom}
+                            size="lg"
+                            className="col-3"
+                        >
+                            Random
+                        </Button>
+                        <Button variant="success" size="lg" className="col-3">
+                            Download
+                        </Button>
+                    </div>
                 </Col>
                 <Col>
                     <div>
