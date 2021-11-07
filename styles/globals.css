@@ -52,6 +52,7 @@ a {
 .ears__img {
     z-index: 102;
     top: -70px;
+    left: 15px;
 }
 .hair__img {
     z-index: 500;
@@ -65,5 +66,5 @@ a {
 .accessories__img {
     z-index: 2000;
     bottom: 20px;
-    left: 8px;
+    left: 24px;
 }
