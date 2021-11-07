@@ -71,7 +71,6 @@ const Home = () => {
         setAccessories(Accessories[randomArray(Accessories)].url);
         setBackgrounds(Backgrounds[randomArray(Backgrounds)].url);
     };
-    console.log(randomArray(Hair));
     return (
         <Container className="mt-2">
             <h1>ALPACA GENERATOR</h1>
